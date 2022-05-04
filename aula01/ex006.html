@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando componentes</title>
+    <style>
+        body {
+            background-color: rgb(71, 181, 218);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>5 métodos de acesso</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" >Clique em mim</div>
+    <br>
+    <div name="msg">Clique aqui</div>
+    <br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] // criando variável p ter acesso a window.document e selecionar os parágrafos com getElementsBytagName
+            /* os colchetes [] depois do () com um número é sempre usado quando algum método estiver no plural, nesse caso o [0] é o primeiro parágrafo selecionado, [1] seria o segundo parágrafo e por ai vai.. */
+        // window.document.write(p1.innerText) /* vou escrever na tela o (innerText) texto que está dentro do primeiro parágrafo, replicando o mesmo */
+        // window.document.write('Está escrito assim: ' + p1.innerText) /* outro exemplo usando texto com concatenação */
+        // p1.style.color = 'blue' /* selecionando o parágrafo [0], e mudando a cor dele */
+
+        var corpo = window.document.body // criando variável p corpo e tendo acesso a window.document.body
+        // corpo.style.background = 'black' /* mudando a cor de fundo */
+
+        // window.document.write(p1.innerText) 
+        // window.document.write(p1.innerHTML) /* innerHTML é a mesma coisa do innerText mas ele já mostra o paragráfo com a formatação inteira do html, nesse caso ele mostra junto com <strong> que deixa em negrito */
+        
+        
+        // var d = window.document.getElementById('msg') /* selecionando a div id="msg" */
+        // d.style.background = 'green'
+        // d.innerText = 'Estou aguardando...'    /* originalmente dentro da div, está escrito 'clique em mim' mas modifiquei o conteúdo da div por js usando DOM, innerText */
+        // window.document.getElementById('msg').innerText = 'Olá!' /* outro método de modificar o conteúdo */
+
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+
+        var e =  window.document.querySelector('div#msg') /* utilizando sintaxe do CSS */
+        e.style.color = 'orange'
+        e.style.background = 'blue'
+
+
+    </script>
+</body>
+</html>
