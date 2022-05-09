@@ -1,0 +1,19 @@
+FUNDAMENTOS:
+
+
+variáveis;
+var / let / const
+são declaradas com a palavra reservada na frente 'var' seguido do nome da variável e sinal de = que significa atribuição e por fim o valor que vai ser atribuido dentro de aspas
+
+var nome = ''
+
+comandos;
+// exemplo desse conteúdo encontra-se no index.html
+
+- console.log(); : serve para printar uma mensagem de uma variável no console do DevTools no navegador
+
+string;
+basicamente são textos 
+// exemplo desse conteúdo encontra-se no strings.html
+
+
