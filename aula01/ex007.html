@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
+    <title>Eventos DOM 1°método</title>
     <style>
         div#area {
             font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,8 @@
         var a = window.document.getElementById('area') // esse 'area' é meu objeto "a" dentro do JS ligado diretamente com a div
         // criei um objeto do lado de fora das function para ficar com um escopo global (servindo para todas as function) 
 
-        function clicar() { // quando eu chamar a função clicar, ele vai executar tudo que estiver dentro do bloco
+        function clicar() { // bloco é todas as linhas de código que estiver dentro de uma function 
+        // quando eu chamar a função clicar, ele vai executar tudo que estiver dentro do bloco
             a.innerText = 'Clicou!'
             a.style.background = 'red' // quando eu clicar o fundo fica vermelho
         }
