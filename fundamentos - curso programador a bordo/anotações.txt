@@ -57,6 +57,12 @@ decremento;
 --a // sentido oposto de ++a
 ---------------------------------------------------------------------------------------------
 Booleanos:
+// exemplo desse conteúdo encontra-se em booleanos.html
+
 // true
 // false
 
+expressões js que retornam true e false;
+
+---------------------------------------------------------------------------------------------
+Operadores lógicos:
