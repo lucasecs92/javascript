@@ -7,13 +7,13 @@ são declaradas com a palavra reservada na frente 'var' seguido do nome da vari�
 var nome = ''
 
 comandos;
-// exemplo desse conteúdo encontra-se no index.html
+// exemplo desse conteúdo encontra-se em index.html
 
-- console.log(); : serve para printar uma mensagem de uma variável no console do DevTools no navegador
+- console.log(); : serve para printar uma mensagem de uma variável no console do DevTools/navegador
 ---------------------------------------------------------------------------------------------
 Strings:
 basicamente são textos 
-// exemplo desse conteúdo encontra-se no strings.html
+// exemplo desse conteúdo encontra-se em strings.html
 
 length : para saber a quantidade de caracteres da string
 toUpperCase() : converte para letras maiúsculas
@@ -30,3 +30,33 @@ template strings;
 (`${}`) : método mais fácil de concatenar strings com variáveris utilizando crase e cifrão entre chaves
 ---------------------------------------------------------------------------------------------
 Operadores matemáticos:
+// exemplo desse conteúdo encontra-se em operadores-matematicos.html
+
+10 + 5 + 3 + 4 = 22
+50 - 10 - 5 + 2 = 37
+5 * 5 = 25
+5 / 2 = 2,5 // duvisão de valor real
+10 / 2 = 5  
+
+10 % 3 // resulta em 1 o resto da divisão de um valor inteiro no caso 10 por 3
+10 % 4 // resulta em 2 o resto da divisão inteira de 10 por 4
+
+incremento;
+
+a++ : significa o valor da variável + 1 com atraso
+a-- : variável - 1
+
+// mesmo eu incrementando o ++ na frente da variável vai atrasar esse incremento, pq ele executa por último na linha de instrução
+
+pré-incremento;
+
+++a // quero passar para o js que ele incremente o ++ primeiro p depois executar outra instrução da linha
+
+decremento;
+
+--a // sentido oposto de ++a
+---------------------------------------------------------------------------------------------
+Booleanos:
+// true
+// false
+
