@@ -13,12 +13,31 @@
 
         console.log(nome.length);  // saber a quantidade de caracteres da string
 
-        console.log('Programador'.length)  // a string não precisa estar dentro de uma variável
+        console.log('Programador'.length); // a string não precisa estar dentro de uma variável
         console.log(nome.toUpperCase()); // converte para letras maiúsculas
 
         console.log(nome.toLowerCase()); // converte para letras minúsculas
                      
-        // posso estruturar um trecho de uma palavra dentro de outro texto
+        console.log(nome.indexOf('dor')); // a partir do trecho 'dor' ele vai printar 8, que seria o número de caracteres que ele encontrou nessa posição, com índice baseado em 0(programador-01234567dor)
+
+        console.log(nome.indexOf('teste')); // se o termo não existe na string o indexOf retorna -1
+
+        console.log(nome.replace('Programador', 'Desenvolvedor'));// método que substitui uma palavra da string por outra
+
+        console.log(nome.slice(3,8)); // retornar uma fatia de um texto, no caso usando a string 'Programador' começa pela posição de início 3 e termina na posição de fim 8 retornando 'grama', sempre com índice baseado em 0
+
+        var canalYoutube = '      Programador a Bordo      '
+        
+        console.log(canalYoutube); 
+        console.log(canalYoutube.trim()); // removendo espaços iniciais (esquerda) e finais(direita) da string
+
+        var autor = 'Lucas';
+        console.log('O canal do YouTube ' + canalYoutube.trim() + ' foi criado por ' + autor);
+        // concatenar(juntar) 'strings' com variáveis usando o sinal de +
+
+        console.log(`O canal do Youtube ${canalYoutube.trim()} foi criado por ${autor}`);
+        // template strings, método mais fácil de concatenar 'strings' com variáveis utilizando crase `` e cifrão entre chaves ${}
+
     </script>
 </body>
-</html>
+</html> 

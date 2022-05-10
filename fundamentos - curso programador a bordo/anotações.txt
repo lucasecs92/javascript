@@ -1,7 +1,6 @@
 FUNDAMENTOS:
 
-
-variáveis;
+Variáveis:
 var / let / const
 são declaradas com a palavra reservada na frente 'var' seguido do nome da variável e sinal de = que significa atribuição e por fim o valor que vai ser atribuido dentro de aspas
 
@@ -11,9 +10,23 @@ comandos;
 // exemplo desse conteúdo encontra-se no index.html
 
 - console.log(); : serve para printar uma mensagem de uma variável no console do DevTools no navegador
-
-string;
+---------------------------------------------------------------------------------------------
+Strings:
 basicamente são textos 
 // exemplo desse conteúdo encontra-se no strings.html
 
+length : para saber a quantidade de caracteres da string
+toUpperCase() : converte para letras maiúsculas
+toLowerCase() : converte para letras minúsculas
+indexOf() : serve para procurar um trecho de uma string, printando a quantidade de números de caracteres que ele tem
+replace() : método substitui uma palavra da string por outra
+slice() : serve para retornar uma fatia de um texto, no caso usando a string 'Programador' começa pela posição de início 3 e termina na posição de fim 8 retornando 'grama', sempre com índice baseado em 0
+trim() : remove os espaços iniciais (esquerda) e finais (direita) de uma string
 
+sinal de + : serve para concatenação(juntar) 'strings' com variavéis
+
+template strings; 
+
+(`${}`) : método mais fácil de concatenar strings com variáveris utilizando crase e cifrão entre chaves
+---------------------------------------------------------------------------------------------
+Operadores matemáticos:
