@@ -66,3 +66,20 @@ expressões js que retornam true e false;
 
 ---------------------------------------------------------------------------------------------
 Operadores lógicos:
+// exemplo desse conteúdo encontra-se em operadores-logicos.html
+
+// no JS é possível negar um booleano, ou seja convertendo ele para o oposto de true p false e false para true, utilizando o sinal de (!) antes do valor booleano
+
+!  : sinal de negação, utilizando antes do valor booleano mudando de true para false e vice-versa
+
+!! : dupla negação, ele se nega 2x.. no caso o (a) que é true vai virar false e em seguida vira true novamente (esse sinal mostra o verdadeiro valor)
+
+valores falsos; (por padrão)
+// null, undefined, '' (string vazia), false, 0
+
+// qualquer valor que não seja os falsos por padrão vão ser considerados verdadeiros, como um número inteiro, uma string, ou outro tipo
+..ex 
+console.log(10 && 'texto' && 'programador');
+
+operador &&; 
+// combino 2 valores para a expressão virar true, todos os valores tem que ser true
