@@ -78,8 +78,29 @@ valores falsos; (por padrão)
 // null, undefined, '' (string vazia), false, 0
 
 // qualquer valor que não seja os falsos por padrão vão ser considerados verdadeiros, como um número inteiro, uma string, ou outro tipo
-..ex 
-console.log(10 && 'texto' && 'programador');
 
-operador &&; 
-// combino 2 valores para a expressão virar true, todos os valores tem que ser true
+operador AND lógico: && ; 
+&& : verificar
+// se todos valores forem verdadeiros ele retorna o último true
+// sempre que houver um valor falso na expressão ele já invalida retornando esse valor false
+// se houve vários valores falsos junto com verdadeiros, ele retorna sempre o primeiro valor falso
+ 
+operador OU lógico: || ; 
+regras;
+// se tiver apenas 1 valor true na expressão, ele retorna esse único valor true
+// se todos valores forem falsas ele retorna a última false
+// se todos valores forem verdadeiros ele retorna o primeiro true, sequência esquerda p direita
+
+ps: em uma expressão que houver AND e 'ou' juntos, para solucionar primeiro se resolve os && da esquerda p direita e depois os ||
+---------------------------------------------------------------------------------------------
+Condicionais:
+// testa uma condição
+
+If; 
+
+
+
+
+
+Else;
+

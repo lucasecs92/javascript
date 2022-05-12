@@ -16,14 +16,38 @@
         console.log(!!a); // !! dupla negação, ele se nega 2x.. no caso o (a) que é true vai virar false e em seguida vira true novamente
         console.log(!!b);
 
-        // valores falsos;
+     
+        // valores falsos; (por padrão)
+
         console.log(!!null); // usando sinal de negação ou de dupla negação em um valor falso (default) e mudando seu valor booleano
         console.log(!!undefined);
         console.log(!!'');
         console.log(!!false);
         console.log(!!0);
 
-        // operador end
+        // operador AND: && 
+        console.log(10 && 'texto' && 'Programador'); 
+        // se os 3 valores for verdadeiros, vai retornar sempre o último true 
+        console.log(null && 'Programador a Bordo'); 
+        // sempre que houver um valor falso na expressão ele já invalida, e sempre retorna o valor falso
+        console.log('Passa' && 0 && 'Dev' && null); 
+        // retornando o primeiro valor que deu falso
+        console.log(10 > 5 && 7 < 10); // 2 valor true então retorna o último valor booleano
+        console.log(10 > 5 && 10 > 11);
+        
+        // operador ou: ||
+        console.log(null || 'Programador a Bordo'); // retorna o único valor verdadeiro
+        console.log(null || 'Programador a Bordo' || 26); // retorna o primeiro valor verdadeiro, esquerda p direita
+        console.log(null || '' || 26);
+        console.log('Programador a Bordo' || 'teste'); // retorna o valor verdadeiro da esquerda p direita
+        console.log(10 > 5 || 10 < 11); // 2 true mas retorna o valor verdadeiro da expressão booleana da esquerda p direita
+        console.log(10 > 5 || 10 > 11); // retorna o único valor verdadeiro da expressão booleana
+        console.log(10 < 5 || 10 > 11); // 2 false mas retorna o último valor falso da expressão booleana
+        console.log(null || false || 0); // 3 false retornando o último valor falso da expressão booleana
+        console.log('Programador' && 2050 || '' && 26); // em uma expressão como essa, primeiro se resolve os && da esquerda p direita e por último os ||
+        console.log('Programador' && 2050 && 'a bordo' || 0);
+        console.log(null || !'' && 'Programador');
+        
     </script>
 </body>
 </html>
