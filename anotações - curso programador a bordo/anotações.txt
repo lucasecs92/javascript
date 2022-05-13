@@ -105,6 +105,7 @@ Operador ternário:
 //  ? 'true':'false' 
 // (  ? '#' : '#') if(se) for verdadeiro (?)executa 'true' else(:) 'false'
 ---------------------------------------------------------------------------------------------
-
+Switch Case;
+// 
 
 
