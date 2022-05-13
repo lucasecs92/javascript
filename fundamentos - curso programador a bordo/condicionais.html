@@ -7,19 +7,56 @@
     <title>Programador a bordo</title>
 </head>
 <body>
-    <script>
+    <script> 
+        // condicionais
         if (true) { // dentro dos () vem um operador booleano
-            console.log('Hello World!')
+            console.log('Hello World!') // se a expressão for verdadeiro, vai ser executado
         } 
         if (false) {
-            console.log('Não vai ser')
+            console.log('Não vai ser') // 'não vai ser' ñ será executado pq a condição já é falsa
         }
-        if (3 > 4) {
+        if (3 > 4) { // a condição é um valor falso, então o '3 > 4' n vai ser executado
             console.log('3 > 4')
         }
-        if (3 <= 4) {
+        if (3 <= 4) { // a expressão é verdadeira, então executa 
             console.log('3 <= 4')
         }
+
+        // regras do falso; 
+        var textoVazio = ''; // ñ executa por conta da string vazia que é um valor falso
+        if (textoVazio) {
+            console.log('textoVazio');
+        } 
+
+        if (textoVazio) {
+            console.log('oi'); // o 'oi' só será executado se o valor de if for true
+        } else { // o else 'Olá' só executa se o if for falso 
+            console.log('Olá');
+        }
+
+        if (10 > 20) { // false
+            console.log('10 > 20');
+        } else if (10 <= 12) { // true
+            console.log('10 <= 12'); // os 2 else são true, mas ele executa o primeiro true
+        } else {
+            console.log('Programador'); // true
+        }
+
+        if (10 > 20) { // falso
+            console.log('10 > 20');
+        } else if (10 >= 12) { // falso
+            console.log('10 <= 12');
+        } else {  
+            console.log('Desenvolvedor'); // true
+        }
+
+        // operador ternário;
+        //  ? 'true':'false' 
+        console.log(true ? 'Programador' : 'Designer') // se for verdadeiro executa 'Programador' se não 'Designer' (if ? 'true' else(:) 'false')
+        console.log(false ? 'Programador' : 'Designer')
+
+        var idade = 29;
+        console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade');
     </script>
 </body>
 </html>

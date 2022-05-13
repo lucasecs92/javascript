@@ -94,13 +94,17 @@ regras;
 ps: em uma expressão que houver AND e 'ou' juntos, para solucionar primeiro se resolve os && da esquerda p direita e depois os ||
 ---------------------------------------------------------------------------------------------
 Condicionais:
-// testa uma condição
+// exemplo desse conteúdo encontra-se em condicionais.html
+// testa uma condição usando If e Else;
 
-If; 
+resumindo; 
+if será executado se o valor dele for true, se não será o valor de else 
+---------------------------------------------
+Operador ternário: 
+// muito utilizado, uma forma curta de if e else
+//  ? 'true':'false' 
+// (  ? '#' : '#') if(se) for verdadeiro (?)executa 'true' else(:) 'false'
+---------------------------------------------------------------------------------------------
 
 
-
-
-
-Else;
 
