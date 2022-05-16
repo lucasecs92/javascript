@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador a bordo</title>
+</head>
+<body>
+    <script>
+        var numeros = [5, 3, 12, 17, 10, 99];
+        console.log(numeros); // ele vai executar a variável junto com a posição de cada número, sempre começando pelo 0
+        console.log(numeros[2]); // quero o valor do array que está na posição [2]
+        console.log(numeros[5]);
+        console.log(numeros[0]);
+
+        // propriedade length:
+        console.log(numeros.length); // descobrindo a quantidade de valores que existe em um array
+
+        // pop()
+        console.log(numeros.pop()); // pop() remove e printa qual foi o último elemento do array
+        console.log(numeros); // consultando para ver que o elemento foi removido do array
+
+        // outro método que passa ser a mesma coisa, usando uma variável
+        /* var numeroRetornado = numeros.pop();
+        console.log('numeroRetornado', numeroRetornado);
+        console.log(numeros);
+        */ 
+        
+        // slice() 
+        console.log(numeros.slice(2, 4)); // retorna uma fatia de um array, aceita 2 parâmetros dado a posição inicial e final, contanto que a posição final tem que usar um número a frente dele 
+        console.log(numeros.slice(3)); // ou setar a posição inicial retornando automaticamente até a posição final
+
+        // join()
+        // ele junta todos valores do array e transforma em uma 'string' usando algum tipo de separador
+        console.log(numeros.join('--')); // dentro das aspas falo qual tipo de separador que eu quero entre eles, nesse caso usando hifens
+        console.log(numeros.join(' ')); // usando apenas espaço
+
+        // outro método
+        var usuario = [
+            'Lucas',
+            29, 
+            'Programador a Bordo',
+            2022, 
+            'Brasileiro'
+        ];
+        console.log(usuario);
+
+        // push()
+        // como incluir um novo elemento no fim do array 
+        usuario.push('GO');
+        console.log(usuario);
+
+        //includes()
+        // verificando se um valor especifico está dentro do array, retornando true ou false
+        console.log(usuario.includes('Brasileiro'));
+        console.log(usuario.includes('Japonês'));
+        console.log(usuario.includes(2022));
+        
+
+
+    </script>
+</body>
+</html>
