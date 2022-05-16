@@ -7,7 +7,59 @@
     <title>Programador a bordo</title>
 </head>
 <body>
-    <script>
+    <script> 
+        var cor = 'amarelo';
+        switch(cor) { // (cor) é o valor do var e da condicional switch que quero testar
+          case 'azul': // caso seja azul.. (case é os casos que quero testar) 
+            console.log('Cor azul'); 
+            break; // se a variável for azul, ia printar a cor azul, e com o 'break' associado com o case, garante que a execução pare ali, ñ ia precisar executar mais nenhum case, ele sai da condicional switch
+
+          case 'amarelo':
+            console.log('Cor amarelo');
+            break;
+        
+          case 'vermelho':
+            console.log('Cor vermelho');
+            break;
+        }
+
+        // default: valor padrão, nesse contexto se um case seja verdadeiro no teste, ele cai em um valor default, como se fosse o Else
+        switch(cor) { 
+          case 'azul': 
+            console.log('Cor azul'); 
+            break; 
+
+          case 'verde':
+            console.log('Cor amarelo');
+            break;
+        
+          case 'vermelho':
+            console.log('Cor vermelho');
+            break;
+          
+          default: // nesta situação, se não seja azul, verde ou vermelho vai printar a 'Cor rosa'
+            console.log('Cor rosa');
+            break; 
+        }
+
+        // cenário de multi-case
+        switch('laranja') { // se a cor for vermelho, amarelo ou laranja vai executar o mesmo código, neste quadro 'Cor quente!'
+          case 'vermelho':
+          case 'amarelo':
+          case 'laranja':
+            console.log('Cor quente!');
+            break; 
+          // e caso seja...
+          case 'verde': 
+          case 'azul': 
+          case 'roxo': 
+            console.log('Cor fria!');
+            break;  
+          default: // else - se não um valor default..
+            console.log('Não identificado');  
+            break;
+        }
+
         
     </script>
 </body>
