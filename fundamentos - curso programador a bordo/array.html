@@ -56,9 +56,55 @@
         console.log(usuario.includes('Brasileiro'));
         console.log(usuario.includes('Japonês'));
         console.log(usuario.includes(2022));
-        
+        /* if (usuario.includes(2019)) {
 
+        } */
 
+        // indexOf()
+        // outro método que verifica se tem um elemento dentro do array, mas ele retorna diferente de true ou false, ele retorna qual a posição que está o valor e se ñ encontrar ele retorna -1
+
+        console.log(usuario.indexOf(2022));
+        console.log(usuario.indexOf('Japonês'));
+
+        // concat()
+        // merge: juntando 2 ou mais arrays em 1 único array 
+        var arr1 = [3, 2, 1];
+        var arr2 = ['Programador', 'a', 'Bordo'];
+        // objetivo: [3, 2, 1, 'Programador', 'a', 'Bordo']
+        var resultado = arr1.concat(arr2);
+        console.log(resultado);
+
+        /* também poderíamos juntar 3 arrays em um único concat: 
+        var resultado = arr1.concat(arr2, ['teste', 'fulano', 'ciclano']); 
+        ou encadeando com outros concat
+        var resultado = arr1.concat(arr2).concat(['teste', 'fulano', 'ciclano']);
+        */
+
+        // spread (...)
+        // forma mais simples de usar concat() de arrays
+        // ele gera um novo array, junta todos os valores e transforma em 1 array só
+        console.log([...arr1,...arr2]); // para usar o spread tem q estar dentro de um array e colocado antes da variável
+
+        // array destructuring:      
+        // forma de pegar os valores de um array e armazenalos em variáveis
+        console.log(usuario); 
+
+        var nome = usuario[0];
+        var idade = usuario[1];
+        var canal = usuario[2];
+        var ano = usuario[3];
+        var nacionalidade = usuario[4];
+        var estado = usuario[5];
+        // pegar esses valores e printar juntos p facilitar
+        console.log(nome,idade,canal,ano,nacionalidade,estado); 
+        // pegar esses valores e printar individualmente
+        console.log(nome);
+        console.log(idade);
+        console.log(ano);
+
+        // outro método de fazer destructuring
+        var [nome, idade, ,ano] = usuario; 
+        console.log(nome, idade, ano);
     </script>
 </body>
 </html>
