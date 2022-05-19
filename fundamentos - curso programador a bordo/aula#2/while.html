@@ -10,6 +10,23 @@
     <script>
         var contador = 0;
         while (contador < 5) { // quero executar um código enquanto o contador for menor que 5, da qual é true 
+            console.log(contador); // printa o contador 
+            ++contador; // fica incrementando o contador toda vez que repetir o código, então ele vai começar a valer +1 a partir de cada interação, portanto nesse cenário quando ele chegar no 5 ele para e sai do while, pq 5 não é menor que 5 e sim igual, assim sendo essa afirmação é false.
+        }
+        // forçar a interrupção de um loop usando break
+        var contador = 0;
+        while (contador < 5) {
+            if (contador === 3) { // condicional se o contador for igual a 3 ele sai da interação e para no 2, sem executar o código abaixo
+                break;
+            }
+            console.log(contador);
+            ++contador;
+        }
+
+        // vou printar de 0 a 100 e toda vez que esse contador for múltiplos de 3 printa 'ping' e múltiplos de 5 printa 'pong' e os 2 juntos 'ping pong'
+         
+        var contador = 0;
+        while (contador < 100) { 
             console.log(contador);
             ++contador;
         }
