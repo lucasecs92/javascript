@@ -22,31 +22,34 @@
     <div name="msg">Clique aqui</div>
     <br>
     <script>
-        var p1 = window.document.getElementsByTagName('p')[1] // criando variável p ter acesso a window.document e selecionar os parágrafos com getElementsBytagName
+        var p1 = window.document.getElementsByTagName('p')[1] // criando variável para ter acesso a window.document e selecionar os parágrafos com getElementsByTagName
             /* os colchetes [] depois do () com um número é sempre usado quando algum método estiver no plural, nesse caso o [0] é o primeiro parágrafo selecionado, [1] seria o segundo parágrafo e por ai vai.. */
-        // window.document.write(p1.innerText) /* vou escrever na tela o (innerText) texto que está dentro do primeiro parágrafo, replicando o mesmo */
-        // window.document.write('Está escrito assim: ' + p1.innerText) /* outro exemplo usando texto com concatenação */
-        // p1.style.color = 'blue' /* selecionando o parágrafo [0], e mudando a cor dele */
+        window.document.write(p1.innerText) /* vou escrever na tela o (innerText) texto que está dentro do primeiro parágrafo, replicando o mesmo */
+        window.document.write('<br>Está escrito assim: ' + p1.innerText) /* outro exemplo usando texto com concatenação */
+        p1.style.color = 'blue' /* selecionando o parágrafo que está na variável p1, e mudando a cor dele */
 
-        var corpo = window.document.body // criando variável p corpo e tendo acesso a window.document.body
-        // corpo.style.background = 'black' /* mudando a cor de fundo */
+        
 
-        // window.document.write(p1.innerText) 
-        // window.document.write(p1.innerHTML) /* innerHTML é a mesma coisa do innerText mas ele já mostra o paragráfo com a formatação inteira do html, nesse caso ele mostra junto com <strong> que deixa em negrito */
+        // Acesso ao body 
+        var corpo = window.document.body 
+        corpo.style.background = 'black' /* selecionando o body que está na variável corpo, e mudando a cor de fundo */
+
+        // window.document.write(p1.innerText) ou
+        window.document.write('<br>' + p1.innerHTML) /* innerHTML é a mesma coisa do innerText mas ele já mostra o paragráfo com a formatação inteira do html, nesse caso ele mostra junto com <strong> que deixa em negrito */
         
-        
-        // var d = window.document.getElementById('msg') /* selecionando a div id="msg" */
-        // d.style.background = 'green'
+
+        // Uso do ID
+        var d = window.document.getElementById('msg') /* selecionando a div id="msg" */
+        d.style.background = 'green'
         // d.innerText = 'Estou aguardando...'    /* originalmente dentro da div, está escrito 'clique em mim' mas modifiquei o conteúdo da div por js usando DOM, innerText */
         // window.document.getElementById('msg').innerText = 'Olá!' /* outro método de modificar o conteúdo */
 
-        var d = window.document.getElementsByName('msg')[0]
-        d.innerText = 'Olá!'
+        // var d = window.document.getElementsByName('msg')[0]
+        // d.innerText = 'Olá!'
 
-        var e = window.document.querySelector('div#msg') /* utilizando sintaxe do CSS */
-        e.style.color = 'orange'
-        e.style.background = 'blue'
-
+        // var e = window.document.querySelector('div#msg') /* utilizando sintaxe do CSS */
+        // e.style.color = 'orange'
+        // e.style.background = 'blue'
 
     </script>
 </body>
