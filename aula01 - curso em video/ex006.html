@@ -17,39 +17,55 @@
     <h1>5 métodos de acesso</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg" >Clique em mim</div>
+    <div id="msg1" >Clique em mim</div>
     <br>
-    <div name="msg">Clique aqui</div>
+    <div name="msg2">Clique aqui</div>
+    <br>
+    <div class="msg3">Pressione aqui</div>
     <br>
     <script>
+        // ## Selecionando por TAG
         var p1 = window.document.getElementsByTagName('p')[1] // criando variável para ter acesso a window.document e selecionar os parágrafos com getElementsByTagName
-            /* os colchetes [] depois do () com um número é sempre usado quando algum método estiver no plural, nesse caso o [0] é o primeiro parágrafo selecionado, [1] seria o segundo parágrafo e por ai vai.. */
         window.document.write(p1.innerText) /* vou escrever na tela o (innerText) texto que está dentro do primeiro parágrafo, replicando o mesmo */
         window.document.write('<br>Está escrito assim: ' + p1.innerText) /* outro exemplo usando texto com concatenação */
         p1.style.color = 'blue' /* selecionando o parágrafo que está na variável p1, e mudando a cor dele */
 
+        /* ps: os colchetes [] depois do () com um número é sempre usado quando algum método estiver no plural, nesse caso o [0] é referente o primeiro parágrafo selecionado, [1] referente o segundo parágrafo e por ai vai.. */
         
-
-        // Acesso ao body 
+        // ## Acesso ao body 
         var corpo = window.document.body 
         corpo.style.background = 'black' /* selecionando o body que está na variável corpo, e mudando a cor de fundo */
 
+        // ## Uso do innerText e innerHTML
         // window.document.write(p1.innerText) ou
-        window.document.write('<br>' + p1.innerHTML) /* innerHTML é a mesma coisa do innerText mas ele já mostra o paragráfo com a formatação inteira do html, nesse caso ele mostra junto com <strong> que deixa em negrito */
+        window.document.write('<br>' + p1.innerHTML) /* são a mesma coisa mas innerHTML escreve na tela o paragráfo com a formatação inteira do html, nesse caso ele mostra junto com <strong> que deixa em negrito */
         
+            
+        // ## Selecionando por ID
+        var d = window.document.getElementById('msg1') /* selecionando a div id="msg1" */
+        d.style.background = 'green'     /* modificando a cor de fundo dentro da div */
 
-        // Uso do ID
-        var d = window.document.getElementById('msg') /* selecionando a div id="msg" */
-        d.style.background = 'green'
-        // d.innerText = 'Estou aguardando...'    /* originalmente dentro da div, está escrito 'clique em mim' mas modifiquei o conteúdo da div por js usando DOM, innerText */
-        // window.document.getElementById('msg').innerText = 'Olá!' /* outro método de modificar o conteúdo */
+        // ## Modificando conteúdo
+        d.innerText = 'Estou aguardando...'     /* modificando o conteúdo original dentro da div, que está escrito 'clique em mim' para 'Estou aguardando' usando DOM, innerText */
 
-        // var d = window.document.getElementsByName('msg')[0]
-        // d.innerText = 'Olá!'
+        // ### Outro método de modificar o conteúdo por ID
+        // window.document.getElementById('msg1').innerText = 'Olá!' 
+        
+        // ## Selecionando e modificando conteúdo por NOME
+        var e = window.document.getElementsByName('msg2')[0]
+        e.innerText = 'Olá!'
+        e.style.color = 'black'
+        e.style.background = 'yellow'
+        
+        // ## Selecionando por classe
+        var f = window.document.getElementsByClassName('msg3')[0]
+        f.innerText = 'Hello'
+        f.style.background = 'blue'
 
-        // var e = window.document.querySelector('div#msg') /* utilizando sintaxe do CSS */
-        // e.style.color = 'orange'
-        // e.style.background = 'blue'
+        // ## Selecionando por seletor
+        var d = window.document.querySelector('div#msg1') /* utilizando sintaxe do CSS */
+        d.style.color = 'orange'
+        // e.style.background = 'lightgreen'
 
     </script>
 </body>
