@@ -20,14 +20,15 @@
 </head>
 <body>
     <div id="area" onclick="clicar()"> <!-- três eventos -->
-        <!-- quando eu clicar em cima da div, ele vai disparar a mensagem 'clicou' -->
+        <!-- quando eu (clicar) em cima da div, ele vai disparar a mensagem 'clicou' -->
         Interaja...
     </div>
     
     <script>
         function clicar() {
             var a = window.document.getElementById('area')
-            a.innerText = 'Clicou!'
+            a.innerText = 'Clicou!' // mudando o texto 'Interaja...' para 'Clicou!'
+            a.style.background = 'lightcoral' // mudando cor do fundo 
         }
 
 
