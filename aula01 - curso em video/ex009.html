@@ -7,14 +7,14 @@
     <title>Eventos DOM 3°método</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18pt;
+            font: normal 18pt Arial;
         }
         input {
-            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
             width: 100px;
         }
-        div#res {
+        p#res {
             margin-top: 20px;
         }
     </style>
@@ -24,7 +24,8 @@
     <input type="number" name="txtn1" id="txtn1"> + <!-- campo input para colocar number --> 
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()"> <!-- botão com o nome somar junto de um evento de click do mouse -->
-    <div id="res">Resultado</div>
+    
+    <p id="res">Resultado</p>
 
     <script>
         function somar() { // função somar, tenho que saber quem é n1 e quem é n2 criando os objetos tn1 e tn2
@@ -33,14 +34,15 @@
 
             var res = window.document.getElementById('res')
 
-            // tenho um valor de n1 e n2 como forma de número pq se eu somar sem a conversão de número ele simplismente concatena
+            
+            // conversão de uma string para um número inteiro utilizando Number.parseInt(n) ou apenas Number
             var n1 = Number(tn1.value) 
             var n2 = Number(tn2.value) 
-            // conversão de número para um número inteiro
-            // value é o valor que está dentro da cx de texto tn1 e tn2
+            // tenho um valor de n1 e n2 como forma de número, pq se eu somar sem a conversão de número ele simplesmente concatena.
+            // obs: value é o valor que está dentro da cx de texto tn1 e tn2 (tn1.value): tn1 é parent da child value
             
             var s = n1 + n2
-            // res.innerHTML = s 
+            // res.innerHTML = s     // imprime apenas o resultado
             // ou
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` // utilizando placeholder
 
