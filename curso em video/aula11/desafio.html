@@ -25,11 +25,12 @@
         var r = window.document.querySelector("div#res");
         var nac = String(país.value);
 
-        r.innerHTML = `<p>Atualmente você vive em ${nac}</p>`;
-        if (nac == "Brasil") {
-          r.innerHTML += `<p>Você é Brasileiro!</p>`;
+        r.innerHTML = `<p>Atualmente você vive em <strong>${nac}</strong></p>`;
+        if (nac == "Brasil" || nac == "brasil") {
+          // usei o sinal de disjunção para quando digitar Brasil ou brasil (maiúscula ou minúscula) ela reconheça ambos como o País.
+          r.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`;
         } else {
-          r.innerHTML += `<p>Você é Estrangeiro!</p>`;
+          r.innerHTML += `<p>Você é <strong>Estrangeiro</strong>!</p>`;
         }
       }
     </script>
