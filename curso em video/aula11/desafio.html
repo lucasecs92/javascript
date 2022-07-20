@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DESAFIO</title>
-</head>
-<body>
+    <style>
+      body {
+        font: normal 18px Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transformando o ex011 em site -->
     <h1>Verificação de Nacionalidade</h1>
-    Em que país você mora? <input type="text">
-</body>
+    Digite aqui o seu país: <input type="text" name="txtp" id="txtp" />
+    <input type="button" value="Confirmar" onclick="verificar()" />
+
+    <div id="res"></div>
+
+    <script>
+      function verificar() {
+        var país = window.document.querySelector("input#txtp");
+        var r = window.document.querySelector("div#res");
+        var nac = String(país.value);
+
+        r.innerHTML = `<p>Atualmente você vive em ${nac}</p>`;
+        if (nac == "Brasil") {
+          r.innerHTML += `<p>Você é Brasileiro!</p>`;
+        } else {
+          r.innerHTML += `<p>Você é Estrangeiro!</p>`;
+        }
+      }
+    </script>
+  </body>
 </html>
