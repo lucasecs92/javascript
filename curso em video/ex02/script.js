@@ -49,6 +49,6 @@ function verificar() {
       }
     }
     res.innerHTML = `Detectamos ${genre} com ${idade} anos.`;
-    res.appendChild(img); // adicionando o elemento img embaixo 
+    res.appendChild(img); // adicionando o elemento img embaixo
   }
 }
