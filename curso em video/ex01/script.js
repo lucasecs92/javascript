@@ -8,7 +8,7 @@ function carregar() {
   if (hora >= 0 && hora < 12) {
     // SE a hora atual for maior ou igual a 00h e a hora for abaixo de 12h é 'bom dia!' (entre 00h e 12h)
     img.src = "images/fotomanha.png";
-    document.body.style.background = "#e2cd9f";
+    document.body.style.background = "#e2cd9f"; // mudando cor de fundo dinamicamente
   } else if (hora >= 12 && hora < 18) {
     // SE NÃO SE a hora for maior ou igual a 12h e a hora for abaixo de 18 é 'boa tarde!' (entre 12h e 18h)
     img.src = "images/fototarde.png";
