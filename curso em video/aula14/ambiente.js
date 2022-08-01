@@ -6,7 +6,7 @@ while (c <= 5) {
 }
 */
 
-// ou
+// ou utilizando for
 
 /*
 for (var c = 1; c <= 5; c++) {
