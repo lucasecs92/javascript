@@ -2,12 +2,16 @@ function tabuada() {
   let num = document.getElementById("txtn");
   let tab = document.getElementById("seltab");
   if (num.value.length == 0) { // se o num estiver vazio
-    window.alert('Por favor, digite um número!')
+    window.alert("Por favor, digite um número!");
   } else {
     let n = Number(num.value);
-    let c = 1
+    let c = 1;
+    tab.innerHTML = '' // limpa a area de tabuada antes de mostrar a próxima tabuada
     while (c <= 10) {
-        re
+      let item = document.createElement("option");
+      item.text = `${n} x ${c} = ${n * c}`;
+      tab.appendChild(item);
+      c++
     }
   }
 }
