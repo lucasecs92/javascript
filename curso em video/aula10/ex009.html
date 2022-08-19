@@ -15,7 +15,7 @@
         width: 100px;
       }
       p#res {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -38,9 +38,9 @@
         var res = window.document.getElementById("res");
 
         // conversão de uma string para um número inteiro utilizando Number.parseInt(n) ou apenas Number
-        var n1 = Number(tn1.value);
+        var n1 = Number(tn1.value); // variável p o valor de n1 e n2
         var n2 = Number(tn2.value);
-        // tenho um valor de n1 e n2 como forma de número, pq se eu somar sem a conversão de número ele simplesmente concatena.
+        // agora tenho o valor de n1 e n2 como forma de número, pq se eu somar sem a conversão de número ele simplesmente concatena.
         // obs: value é o valor que está dentro da cx de texto tn1 e tn2 (tn1.value): value é child de tn1
 
         var s = n1 + n2;
