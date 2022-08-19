@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco <span>&#x1F4B5;</span></h1>
+    <input type="button" value="Comprar produto" onclick="troco()">
+    <script>
+        function troco() {
+            var produto = window.prompt("Que produto você está comprando? ")
+
+            var custo_produto = Number(window.prompt(`Quanto custa o/a ${produto} que você está comprando?`))
+
+            var money = Number(window.prompt(`Qual foi o valor que você deu para pagar o/a ${produto}?`))
+            
+            var change = money - custo_produto;
+
+            if (money >= custo_produto) {
+                window.alert(`Você comprou ${produto} que custou R$${custo_produto}.\nDeu R$${money} em dinheiro e vai receber R$${change} de troco.\nVolte Sempre!`)
+            } else {
+
+            }
+        }
+    </script>
+</body>
+</html>
