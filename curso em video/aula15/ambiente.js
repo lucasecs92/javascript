@@ -5,6 +5,10 @@ num.push(7); // método push acrescenta o elemento 7 na última posição(índic
 /* num.sort();   // organiza os elementos em ordem crescente */
 console.log(`Nosso vetor é o ${num}`);
 
+// Uso do indexOf()
+let pos = num.indexOf(8);
+console.log(`O valor 8 está na posição ${pos}`);
+
 // Uso do length
 
 // esse atributo mostra a quantidade de posições que existe no array/vetor
@@ -17,10 +21,6 @@ console.log(`O vetor tem ${n.length} posições`);
 console.log(n[1]); // descobrindo qual elemento está nessa posição [1]
 console.log(`O primeiro valor do vetor é ${n[0]}`);
 
-// Uso do indexOf()
-
-let pos = num.indexOf(8);
-console.log(`O valor 8 está na posição ${pos}`);
 
 
 // se por acaso eu queira buscar um valor que não existe, retornando -1
