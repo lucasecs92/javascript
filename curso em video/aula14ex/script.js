@@ -32,7 +32,7 @@ function contar() {
     } else {
       // CONTAGEM REGRESSIVA
       // código de contar do maior p o menor
-      // vai começar do início sendo um número maior, (while)enquanto contador for maior ou igual a f, meu contador vai perder o passo.
+      // vai começar do início sendo um número maior, (while) enquanto contador for maior ou igual a f, meu contador vai perder o passo.
       for (let c = i; c >= f; c -= p) {
         res.innerHTML += ` ${c} 👉`; // ou \u{1F449}
       }
