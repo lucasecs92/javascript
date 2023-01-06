@@ -4,11 +4,7 @@ function contar() {
   let passo = document.getElementById("txtp");
   let res = document.getElementById("res");
 
-  if (
-    ini.value.length == 0 ||
-    fim.value.length == 0 ||
-    passo.value.length == 0
-  ) {
+  if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
     // se o início estiver vazio OU o fim estiver vazio OU passo estiver vazio dispara o alert (se deixar qualquer campo em branco)
     window.alert("[ERRO] Faltam dados!");
     res.innerHTML = "Impossível contar!";
@@ -18,6 +14,7 @@ function contar() {
     let i = Number(ini.value); // pegando o valor de ini e convertendo para um número
     let f = Number(fim.value); // pegando o valor de fim e convertendo para um número
     let p = Number(passo.value); // pegando o valor de passo e convertendo para um número
+    
     if (p <= 0) { 
         // se o passo for menor ou igual a 0, automaticamente ele considera o passo igual a 1 
         window.alert('Passo invalido! Considerando PASSO 1')
