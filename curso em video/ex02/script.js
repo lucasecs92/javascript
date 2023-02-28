@@ -1,8 +1,10 @@
 function verificar() {
+
   var data = new Date();
   var ano = data.getFullYear(); // me diz o ano atual
   var fano = window.document.getElementById("txtano");
   var res = window.document.querySelector("div#res");
+  
   if (fano.value.length == 0 || fano.value > ano) {
     // se o valor de fano estiver vazio 'ou' o valor for maior que o ano atual
     window.alert("[ERRO] Verifique os dados e tente novamente!");
